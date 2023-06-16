@@ -3,9 +3,14 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const postEntries = await getCollection('posts');
-  return postEntries.map(post => ({
-    params: { slug: post.slug }, props: { post },
-  }));
+  return postEntries.map( (post) => {
+    return {
+      params: { 
+        slug: post.slug }, 
+        props: { post },
+      }
+    }
+  );
 }
 
 const { post } = Astro.props;
