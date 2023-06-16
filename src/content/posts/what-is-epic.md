@@ -4,11 +4,11 @@ author: "GymX"
 pubDate: 2023-06-01
 tags: ['blog']
 ---
-# What is Epic?
 We use the word "epic" often. We use it to describe many things. I'm not sure we always use it correctly, even in the context of trail running or ultras.
 
-The first results from Google when you search 'epic' are:
-EPIC | The Leading Digital Library for Kids
+The first results from Google when you search `epic` are:
+
+EPIC : The Leading Digital Library for Kids
 and
 Epic Games
 and
