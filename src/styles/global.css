@@ -81,48 +81,48 @@ h6 {
 @font-face {
   font-family: "Urbanist";
   font-weight: 900;
-  src: url("./src/assets/fonts/Urbanist-Black.woff2") format("woff2"),
-    url("./src/assets/fonts/Urbanist-Black.woff") format("woff");
+  src: url("/src/assets/fonts/Urbanist-Black.woff2") format("woff2"),
+    url("/src/assets/fonts/Urbanist-Black.woff") format("woff");
 }
 @font-face {
   font-family: "Urbanist";
   font-weight: 700;
-  src: url("./src/assets/fonts/Urbanist-Bold.woff2") format("woff2"),
-    url("./src/assets/fonts/Urbanist-Bold.woff") format("woff");
+  src: url("/src/assets/fonts/Urbanist-Bold.woff2") format("woff2"),
+    url("/src/assets/fonts/Urbanist-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Urbanist";
   font-weight: 700;
   font-style: italic;
-  src: url("./src/assets/fonts/Urbanist-BoldItalic.woff2") format("woff2"),
-    url("./src/assets/fonts/Urbanist-BoldItalic.woff") format("woff");
+  src: url("/src/assets/fonts/Urbanist-BoldItalic.woff2") format("woff2"),
+    url("/src/assets/fonts/Urbanist-BoldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "Urbanist";
   font-weight: 400;
-  src: url("./src/assets/fonts/Urbanist-Medium.woff2") format("woff2"),
-    url("./src/assets/fonts/Urbanist-Medium.woff") format("woff");
+  src: url("/src/assets/fonts/Urbanist-Medium.woff2") format("woff2"),
+    url("/src/assets/fonts/Urbanist-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
-  src: url("./src/assets/fonts/opensans-regular-webfont.woff2") format("woff2"),
-    url("./src/assets/fonts/opensans-regular-webfont.woff") format("woff");
+  src: url("/src/assets/fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("/src/assets/fonts/opensans-regular-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
-  src: url("./src/assets/fonts/opensans-bold-webfont.woff2") format("woff2"),
-    url("./src/assets/fonts/opensans-bold-webfont.woff") format("woff");
+  src: url("/src/assets/fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("/src/assets/fonts/opensans-bold-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 600;
-  src: url("./src/assets/fonts/opensans-semibold-webfont.woff2") format("woff2"),
-    url("./src/assets/fonts/opensans-semibold-webfont.woff") format("woff");
+  src: url("/src/assets/fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("/src/assets/fonts/opensans-semibold-webfont.woff") format("woff");
 }
 
 @font-face {

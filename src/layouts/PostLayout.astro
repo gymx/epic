@@ -1,7 +1,6 @@
 ---
 import HeadAndMeta from "../components/HeadAndMeta.astro";
 import Header from "../components/Header.astro";
-import Categories from "../components/Categories.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
@@ -11,7 +10,6 @@ const { title } = Astro.props;
   <HeadAndMeta />
   <body>
     <Header />
-    <Categories />
     <main>
       <slot />
     </main>
