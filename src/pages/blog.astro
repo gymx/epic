@@ -7,12 +7,11 @@ const title = "Blog";
 ---
 
 <BaseLayout title={title}>
-	<h1>{title}</h1>
 	<h2>Blog posts--</h2>
 	<>
 		{ posts.map( (post) => (
 			<li>
-				<a href={post.slug}>{post.slug}</a>
+				<a href={`/blog/${post.slug}`}>{post.slug}</a>
 				<p>published {post.data.pubDate} by {post.data.author}</p>
 			</li>
 		))}
