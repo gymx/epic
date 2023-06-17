@@ -2,8 +2,10 @@
 title: Second Post
 author: Jimmy
 pubDate: 2023-06-02
+category: Gear
+description: this is a short description of the post which can be used in the card.
 tags:
-  - gear
+  - shoes socks
 draft: false
 ---
 ## Sub Title

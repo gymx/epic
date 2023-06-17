@@ -2,6 +2,8 @@
 title: What is Epic?
 author: Jim
 pubDate: 2023-06-01
+category: Racing
+description: this is a short description of the post which can be used in the card.
 tags:
   - newsletter
   - blog

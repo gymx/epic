@@ -1,0 +1,14 @@
+---
+import About from "../pages/about.astro";
+const { post } = Astro.props;
+---
+<div class="card">
+  <div class="header">{post.data.category}</div>
+  <div class="tags">
+      <p>{post.data.tags}</p>
+  </div>
+  <div class="title">{post.data.title}</div>
+  <div class="description">{post.data.description}</div>
+  <div class="more"><a href={post.slug}>Read more...</a></div>
+</div>
+

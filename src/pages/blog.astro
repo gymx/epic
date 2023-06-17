@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import PostCard from "../components/PostCard.astro";
 const publishedPosts = await getCollection('posts', ({data})=>{
 	return data.draft !== true;
 });
@@ -10,11 +11,9 @@ const title = "Blog";
 
 <BaseLayout title={title}>
 	<h2>Blog posts--</h2>
-	<>
 		{ publishedPosts.map( (post) => (
 			<li>
-				<a href={`/blog/${post.slug}`}>{post.slug}</a>
-				<p>published {post.data.pubDate} by {post.data.author}</p>
+				<PostCard post = {post} />
 			</li>
 		))}
 	</ul>
