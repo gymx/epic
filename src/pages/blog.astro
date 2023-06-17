@@ -11,10 +11,19 @@ const title = "Blog";
 
 <BaseLayout title={title}>
 	<h2>Blog posts--</h2>
+	<div class="blogCards">
 		{ publishedPosts.map( (post) => (
-			<li>
 				<PostCard post = {post} />
-			</li>
-		))}
-	</ul>
+				))
+			}
+	</div>
 </BaseLayout>
+
+<style>
+	.blogCards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+</style>

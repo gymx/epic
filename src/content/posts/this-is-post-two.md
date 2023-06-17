@@ -5,7 +5,8 @@ pubDate: 2023-06-02
 category: Gear
 description: this is a short description of the post which can be used in the card.
 tags:
-  - shoes socks
+  - shoes
+  - socks
 draft: false
 ---
 ## Sub Title
