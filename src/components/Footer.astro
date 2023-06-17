@@ -3,9 +3,33 @@
     <p>Facebook</p>
     <p>Instagram</p>
   </div>
+  <div class="legal">Privacy Policy / Terms and Conditions</div>
   <div class="copyright">
     <p>Do Your Epic &copy; All Rights Reserved 2023</p>
     <p>Design by Jim Cross</p>
   </div>
-  <div class="Legal">Privacy Policy / Terms and Conditions</div>
 </footer>
+
+<style>
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-primary-500);
+    padding: 3em 1em 2em 1em;
+    color: var(--clr-white);
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+
+  }
+  
+  .copyright, .legal {
+    font-size: x-small;
+  }
+</style>
