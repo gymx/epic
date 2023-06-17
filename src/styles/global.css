@@ -1,6 +1,11 @@
 :root {
-  --clr-primary-500: hsl(257, 40%, 49%);
-  ---clr-secondary-500: hsl(157, 40%, 49%);
+  --clr-primary-500: hsl(23, 83%, 53%);
+  --clr-primary-900: hsl(23, 83%, 23%);
+  --clr-primary-300: hsl(23, 83%, 70%);
+  ---clr-secondary-500: hsl(147, 60%, 39%);
+
+  --clr-black: #121212;
+  --clr-white: #efefef;
 
   --ff-base: "Open Sans", sans-serif;
   --ff-headings: "Urbanist", sans-serif;
@@ -142,6 +147,8 @@ body {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5;
+  color: var(--clr-primary-900);
+  background-color: var(--clr-white);
 }
 
 h1 {
@@ -154,3 +161,44 @@ h3 {
   font-family: var(--ff-headings);
   font-weight: 700;
 }
+  a {
+    text-decoration: none;
+    color: var(--clr-primary-500);
+  }
+
+  a:hover {
+    color: var(--clr-primary-900);
+  }
+
+
+.base-header{
+  margin: .5rem 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-image: url(../assets/images/mountains-dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: var(--clr-primary-500);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+.category {
+  color: var(--clr-primary-500);
+  border: 1px solid var(--clr-primary-500);
+  border-radius: 5px;
+  padding: 0 .5rem;
+}
+
+.categories a {
+  text-decoration: none;
+}
+
