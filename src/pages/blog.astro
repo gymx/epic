@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-const posts = await getCollection('posts');
+const publishedPosts = await getCollection('posts', ({data})=>{
+	return data.draft !== true;
+});
 
 const title = "Blog";
 ---
@@ -9,7 +11,7 @@ const title = "Blog";
 <BaseLayout title={title}>
 	<h2>Blog posts--</h2>
 	<>
-		{ posts.map( (post) => (
+		{ publishedPosts.map( (post) => (
 			<li>
 				<a href={`/blog/${post.slug}`}>{post.slug}</a>
 				<p>published {post.data.pubDate} by {post.data.author}</p>

@@ -5,6 +5,7 @@ pubDate: 2023-06-01
 tags:
   - newsletter
   - blog
+draft: false
 ---
 We use the word "epic" often. We use it to describe many things. I'm not sure we always use it correctly, even in the context of trail running or ultras.
 
