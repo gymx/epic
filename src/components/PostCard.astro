@@ -54,14 +54,18 @@ const { post } = Astro.props;
     justify-content: flex-start;
     gap: .3em;
     padding-left: .3rem;
-    background-color: var(--clr-secondary-500);
-    color: var(--clr-white);
+    margin-top: .4em;
   }
 
   .tags li {
     font-family: var(--ff-headings);
     font-weight: var(--fw-bold);
+    font-size: small;
+    color: var(--clr-secondary-500);
     list-style-type: none;
+    border: 2px solid var(--clr-secondary-500);
+    border-radius: 4px;
+    padding: 0.1rem 0.2rem;
   }
   
 </style>

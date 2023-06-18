@@ -9,7 +9,7 @@ tags:
   - blog
 draft: false
 ---
-We use the word "epic" often. We use it to describe many things. I'm not sure we always use it correctly, even in the context of trail running or ultras.
+We use the word "**epic**" often. We use it to describe many things. I'm not sure we always use it correctly, even in the context of trail running or ultras.
 
 
 The first results from Google when you search 'epic' are:
