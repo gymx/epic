@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
@@ -19,5 +20,18 @@ const { Content } = await post.render();
 ---
 <BaseLayout>
   <h1>{post.data.title}</h1>
+  <p class="published">Posted: <FormattedDate date={post.data.pubDate}/></p>
+  <p class="author">by - {post.data.author}</p>
   <Content />
 </BaseLayout>
+
+<style>
+  .published {
+    font-size: x-small;
+  }
+
+  .author {
+    font-size: small;
+    font-weight: var(--fw-bold);
+  }
+</style>
