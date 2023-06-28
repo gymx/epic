@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro"
 import { getCollection } from "astro:content";
 import PostCard from "../../components/PostCard.astro";
 
-const title = "Training";
+const title = "Crew";
 const postsList = await getCollection('posts', ({data})=>{
 	return data.category == title;
 });
