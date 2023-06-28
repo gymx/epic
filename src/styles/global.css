@@ -202,3 +202,18 @@ h3 {
   text-decoration: none;
 }
 
+.btn-cta {
+  background-color: var(--clr-secondary-500);
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+  border-radius: 100px;
+  padding: .5em 1em;
+  margin: 1em auto;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background-color: hsl(147, 60%, 59%);
+  color: hsl(147, 60%, 19%);
+}
