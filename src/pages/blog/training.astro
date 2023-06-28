@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import PostCard from "../../components/PostCard.astro";
+const trainingPosts = await getCollection('posts', ({data})=>{
+	return data.category == "Training";
+});
+
+const title = "Blog";
+---
+
+<BaseLayout title={title}>
+	<h2>{title}</h2>
+	<div class="blogCards">
+		{ trainingPosts.map( (post) => (
+				<PostCard post = {post} />
+				))
+			}
+	</div>
+</BaseLayout>
+
+<style>
+	.blogCards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+</style>
