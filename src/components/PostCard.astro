@@ -25,26 +25,32 @@ const { post } = Astro.props;
     border-radius: 10px;
     max-width: 30%;
     min-width: 200px;
+    box-shadow: 3px 6px 18px var(--clr-black);
   }
   
   .header {
-    background-color: var(--clr-primary-500);
-    border-radius: 10px 10px 0 0;
-    padding: .5rem;
-    color: var(--clr-white);
+    font-size: 1.2em;
     font-family: var(--ff-headings);
     font-weight: var(--fw-bold);
+    color: var(--clr-primary-900);
+    padding: 0 .2em;
+    background-color: var(--clr-primary-500);
+    border-radius: 10px 10px 0 0;
   }
 
   .title, .description, .more {
     padding: 0 .5rem;
   }
 
+  .description {
+    line-height: 1.4em;
+  }
+  
   .title {
     font-family: var(--ff-headings);
-    font-weight: var(--fw-bold);
-    font-size: 2rem;
-
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: .5em 0;
   }
 
   .tags {

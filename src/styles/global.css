@@ -8,7 +8,7 @@
   --clr-white: #efefef;
 
   --ff-base: "Open Sans", sans-serif;
-  --ff-headings: "Urbanist", sans-serif;
+  --ff-headings: "PermanentMarker", serif;
 
   --fw-regular: 400;
   --fw-semibold: 600;
@@ -81,6 +81,12 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+@font-face {
+  font-family: "PermanentMarker";
+  font-weight: 400;
+  src: url("/src/assets//fonts/PermanentMarker-Regular.woff2") format("woff2"),
+    url("/src/assets//fonts/PermanentMarker-Regular.woff") format("woff");
 }
 
 @font-face {

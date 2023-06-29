@@ -11,7 +11,7 @@ const postsList = await getCollection('posts', ({data})=>{
 ---
 
 <BaseLayout title={title}>
-	<h2>{title}</h2>
+	<h1>{title}</h2>
 	<div class="blogCards">
 		{ postsList.map( (post) => (
 				<PostCard post = {post} />
