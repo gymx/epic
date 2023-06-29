@@ -6,14 +6,29 @@
   <a class="category" href="/blog/crew">Crew</a>
 </nav>
 <style>
-  a:hover {
-    border-color: var(--clr-primary-900);
-    font-weight: var(--fw-bold);
-  }
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: .5em;
+}
 
-  .category {
-    font-size: small;
-    font-weight: var(--fw-semibold);
-  }
+.category {
+  font-size: small;
+  font-weight: var(--fw-semibold);
+  color: var(--clr-primary-500);
+  border: 1px solid var(--clr-primary-500);
+  border-radius: 5px;
+  padding: 0 .5rem;
+}
+
+.categories a {
+  text-decoration: none;
+}
+
+.categories a:hover {
+  border-color: var(--clr-primary-900);
+  font-weight: var(--fw-bold);
+}
 
 </style>

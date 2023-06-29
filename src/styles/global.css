@@ -170,42 +170,22 @@ h3 {
     color: var(--clr-primary-900);
   }
 
-
 .base-header{
-  margin: .5rem 1rem;
+  margin: .5rem 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   background-image: url(../assets/images/mountains-dark.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  color: var(--clr-primary-500);
-}
-
-.categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1rem;
-  margin: 0 1rem;
-}
-
-.category {
-  color: var(--clr-primary-500);
-  border: 1px solid var(--clr-primary-500);
-  border-radius: 5px;
-  padding: 0 .5rem;
-}
-
-.categories a {
-  text-decoration: none;
 }
 
 .btn-cta {
   background-color: var(--clr-secondary-500);
   color: var(--clr-white);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semibold);
   border-radius: 100px;
   padding: .5em 1em;
   margin: 1em auto;
