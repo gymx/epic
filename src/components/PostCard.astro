@@ -4,13 +4,16 @@ import About from "../pages/about.astro";
 const { post } = Astro.props;
 ---
 <div class="card">
-  <div class="header">{post.data.category}</div>
+  <div class="header">
+    {post.data.category}
+    <img src=`../../src/assets/images/${post.data.category}.jpg` />
+  </div>
   <ul class="tags">
     { post.data.tags.map( (tag) => <li class="tag">{tag}</li>) }
   </ul>
   <div class="title">{post.data.title}</div>
   <div class="description">{post.data.description}</div>
-  <div class="more"><a href={post.slug}>Read more...</a></div>
+  <div class="more"><a href={post.slug}>Read post --&gt;</a></div>
   </div>
 
 
@@ -24,7 +27,7 @@ const { post } = Astro.props;
     border: 1px solid var(--clr-primary-500);
     border-radius: 10px;
     max-width: 30%;
-    min-width: 200px;
+    min-width: 275px;
     box-shadow: 3px 6px 18px var(--clr-black);
   }
   
@@ -72,6 +75,15 @@ const { post } = Astro.props;
     border: 2px solid var(--clr-secondary-500);
     border-radius: 4px;
     padding: 0.1rem 0.2rem;
+  }
+
+  .more {
+    align-self: center;
+  }
+  
+  .more a {
+    font-family: var(--ff-headings);
+    color: var(--clr-primary-900);
   }
   
 </style>
