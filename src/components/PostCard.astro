@@ -9,12 +9,8 @@ const { title, category, tags, description } = post.data;
     <div class="cat">
       {category}
     </div>
-    <!-- dymanic image based on category of post
-    want this to be background image under header
-    -->
-    <!-- <img src=`../../src/assets/images/${category}.jpg` alt="graphic representation of category for displayed post"/> -->
   </div>
-  <div>
+  <div class="taglist">
     <ul class="tags">
       { tags.map( (tag) => <li class="tag">{tag}</li>) }
     </ul>
@@ -41,27 +37,25 @@ const { title, category, tags, description } = post.data;
     font-family: var(--ff-headings);
     font-weight: var(--fw-bold);
     color: var(--clr-primary-900);
-    padding: 0 .2em;
-    height: 150px;
-    background-color: var(--clr-primary-500);
+    padding-inline: .5em;
+    padding-bottom: 3em;
     border-radius: 10px 10px 0 0;
-    position: relative;
-    isolation: isolate;
-  }
-
-  /* .cat {
-    display: inline;
-    background-color: var(--clr-white);
-  }
-  
-  .Gear {
-    background-image: url('../../../src/assets/images/gear.jpg');
-    background-size: cover;
+    background-color: var(--clr-primary-500);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
   }
- */
 
+  .Gear { background-image: url('../assets/images/gear.jpg'); }
 
+  .Crew { background-image: url('../assets/images/crew.jpg'); }
+
+  .Racing { background-image: url('../assets/images/racing.jpg'); }
+
+  .Training { background-image: url('../assets/images/training.jpg'); }
+
+  .Nutrition{ background-image: url('../assets/images/nutrition.jpg'); }
+  
   .title, .description, .more {
     padding: 0 .5rem;
   }
@@ -77,6 +71,14 @@ const { title, category, tags, description } = post.data;
     margin: .5em 0;
   }
 
+  .taglist {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-semibold);
+    font-size: small;
+    color: var(--clr-secondary-500);
+    margin: 0;
+    margin-top: .2em;
+  }
   .tags {
     display: flex;
     justify-content: flex-start;
@@ -89,10 +91,6 @@ ul {
   }
 
   .tags li {
-    font-family: var(--ff-base);
-    font-weight: var(--fw-semibold);
-    font-size: small;
-    color: var(--clr-secondary-500);
     list-style-type: none;
     border: 2px solid var(--clr-secondary-500);
     border-radius: 4px;
