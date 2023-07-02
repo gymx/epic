@@ -25,10 +25,11 @@ const { title, category, tags, description } = post.data;
   .card {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
+    flex-basis: 30%;
     border: 1px solid var(--clr-primary-500);
     border-radius: 10px;
-    max-width: 20ch;
-    min-width: 275px;
+  	box-shadow: 2px 4px 12px var(--clr-black);
 
   }
   
