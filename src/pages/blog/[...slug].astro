@@ -22,7 +22,9 @@ const { Content } = await post.render();
   <h1>{post.data.title}</h1>
   <p class="published">Posted: <FormattedDate date={post.data.pubDate}/></p>
   <p class="author">by - {post.data.author}</p>
-  <Content />
+  <div class="content">
+    <Content />
+  </div>
 </BaseLayout>
 
 <style>
