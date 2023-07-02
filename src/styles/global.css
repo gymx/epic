@@ -140,8 +140,8 @@ h6 {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: italic;
-  src: url("./src/assets/fonts/opensans-italic-webfont.woff2") format("woff2"),
-    url("./src/assets/fonts/opensans-italic-webfont.woff") format("woff");
+  src: url("./src/assets/fonts/OpenSans-MediumItalic.woff2"),
+    url("./src/assets/fonts/OpenSans-MediumItalic.woff");
 }
 
 html {
