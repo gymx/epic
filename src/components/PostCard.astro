@@ -17,7 +17,7 @@ const { title, category, tags, description } = post.data;
   </div>
   <div class="title">{title}</div>
   <div class="description">{description}</div>
-  <div class="more"><a href={post.slug}>Read post --&gt;</a></div>
+  <div class="more"><a href=`/blog/${post.slug}`>Read post --&gt;</a></div>
 </div>
 
 
@@ -105,6 +105,10 @@ ul {
   .more a {
     font-family: var(--ff-headings);
     color: var(--clr-primary-900);
+  }
+
+  .more a:hover {
+    color: var(--clr-primary-500)
   }
   
 </style>

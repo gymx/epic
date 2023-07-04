@@ -14,6 +14,9 @@ import FormattedDate from "../components/FormattedDate.astro";
   <div class="content">
     <slot />
   </div>
+  <div class="footer">
+    <a href="/blog">&lt;-- Back to Blog</a>
+  </div>
 </BaseLayout>
 
 <style>
@@ -28,5 +31,19 @@ import FormattedDate from "../components/FormattedDate.astro";
 
   .content {
     margin-top: .5em;
+  }
+
+  .footer {
+    margin: 1em;
+  }
+
+  .footer a {
+    margin-top: 2em;
+    font-family: var(--ff-headings);
+    color: var(--clr-primary-900);
+  }
+
+  .footer a:hover {
+    color: var(--clr-primary-500);
   }
 </style>
