@@ -146,6 +146,10 @@ h3 {
     color: var(--clr-primary-500);
   }
 
+  p + p {
+    margin-top: 0.7em;
+  }
+
   a:hover {
     color: var(--clr-primary-900);
   }
