@@ -181,3 +181,10 @@ h3 {
   background-color: hsl(147, 60%, 59%);
   color: hsl(147, 60%, 19%);
 }
+
+	.blogCards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1em 1em;
+}
+
