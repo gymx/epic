@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 # Allow this job to clone the repo and create a page deployment
-permission:
+permissions:
   contents: read
   pages: write
   id-token: write
@@ -38,4 +38,4 @@ jobs:
       - name: Deploy to Github Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        
+
