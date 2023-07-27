@@ -4,7 +4,7 @@ import About from "../pages/about.astro";
 const { post } = Astro.props;
 const { title, category, tags, description } = post.data;
 ---
-<a href=`/blog/${post.slug}` class="card">
+<a href=`/epic/blog/${post.slug}` class="card">
   <div class:list={['header', `${category}`]}>
     <div class="cat">
       {category}
