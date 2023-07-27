@@ -1,4 +1,5 @@
 name: Deploy to GitHub Pages
+# Github action to deploy master branch to GitHub Page
 
 on:
   # Trigger workflow every time you push to the 'master' branch
