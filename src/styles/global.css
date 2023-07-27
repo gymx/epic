@@ -160,7 +160,7 @@ h3 {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../assets/images/mountains-dark.svg);
+  background-image: url(../assets/mountains-dark.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -182,7 +182,7 @@ h3 {
   color: hsl(147, 60%, 19%);
 }
 
-	.blogCards {
+.blogCards {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	gap: 1em 1em;
