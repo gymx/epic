@@ -4,7 +4,7 @@ import About from "../pages/about.astro";
 const { post } = Astro.props;
 const { title, category, tags, description } = post.data;
 ---
-<div class="card">
+<a href=`/epic/blog/${post.slug}` class="card">
   <div class:list={['header', `${category}`]}>
     <div class="cat">
       {category}
@@ -17,20 +17,16 @@ const { title, category, tags, description } = post.data;
   </div>
   <div class="title">{title}</div>
   <div class="description">{description}</div>
-  <div class="more"><a href={post.slug}>Read post --&gt;</a></div>
-</div>
+  <div class="more"><p>Read post --&gt;</p></div>
+</a>
 
 
 <style>
   .card {
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
-    flex-basis: 30%;
-    border: 1px solid var(--clr-primary-500);
     border-radius: 10px;
   	box-shadow: 2px 4px 12px var(--clr-black);
-
   }
   
   .header {
@@ -47,15 +43,15 @@ const { title, category, tags, description } = post.data;
     background-blend-mode: soft-light;
   }
 
-  .Gear { background-image: url('../assets/images/gear.jpg'); }
+  .Gear { background-image: url('../assets/gear.jpg'); }
 
-  .Crew { background-image: url('../assets/images/crew.jpg'); }
+  .Crew { background-image: url('../assets/crew.jpg'); }
 
-  .Racing { background-image: url('../assets/images/racing.jpg'); }
+  .Racing { background-image: url('../assets/racing.jpg'); }
 
-  .Training { background-image: url('../assets/images/training.jpg'); }
+  .Training { background-image: url('../assets/training.jpg'); }
 
-  .Nutrition{ background-image: url('../assets/images/nutrition.jpg'); }
+  .Nutrition{ background-image: url('../assets/nutrition.jpg'); }
   
   .title, .description, .more {
     padding: 0 .5rem;
@@ -68,6 +64,7 @@ const { title, category, tags, description } = post.data;
   .title {
     font-family: var(--ff-headings);
     font-size: 1.2em;
+    color: var(--clr-primary-900);
     line-height: 1em;
     margin: .5em 0;
   }
@@ -99,12 +96,9 @@ ul {
   }
 
   .more {
+    color: var(--clr-primary-900);
+    font-family: var(--ff-headings);
     align-self: center;
   }
-  
-  .more a {
-    font-family: var(--ff-headings);
-    color: var(--clr-primary-900);
-  }
-  
+    
 </style>

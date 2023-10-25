@@ -9,7 +9,7 @@ tags:
   - hydration
 draft: false
 ---
-![The Italial Alps](/src/assets/images/mountains-italy-alps-1280.jpg) running in Italy
+![The Italial Alps](/src/assets/mountains-italy-alps-1280.jpg) running in Italy
 ## Training is Fun-damental
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae fugiat harum temporibus recusandae commodi velit odit eaque dolores error?
 

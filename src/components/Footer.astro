@@ -1,7 +1,10 @@
+---
+import { Icon } from 'astro-icon';
+---
 <footer class="footer">
   <div class="socials">
-    <p>Facebook</p>
-    <p>Instagram</p>
+    <a href="#"><Icon name="mdi:facebook" class="social--icon" /></a>
+    <a href="#"><Icon name="mdi:instagram" class="social--icon" /></a>
   </div>
   <div class="legal">Privacy Policy / Terms and Conditions</div>
   <div class="copyright">
@@ -32,4 +35,18 @@
   .copyright, .legal {
     font-size: x-small;
   }
+
+  .social--icon {
+    fill: var(--clr-primary-900);
+    /* or */
+    color: var(--clr-primary-900);
+    height: 48px;
+    border-radius: 40px;
+  }
+
+ path {
+  fill: green;
+ }
+
+ 
 </style>

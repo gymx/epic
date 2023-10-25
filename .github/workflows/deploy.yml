@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+# Github action to deploy master branch to GitHub Page
+
+on:
+  # Trigger workflow every time you push to the 'master' branch
+
+  push:
+    branches: [ master ]
+
+  # Allow workflow to be run manually from the Actions tab in GitHub
+  workflow_dispatch:
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v0
+        # with: # Optional Parameters for withastro action
+            # path: . # The root location of your astro project inside the repo
+            # node-version: 19 # Specify node version for environment if necessary
+            # package-manager: npm # Determined from lockfile but can be specified as npm, yarn, whatever
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
