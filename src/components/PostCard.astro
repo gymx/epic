@@ -1,72 +1,83 @@
 ---
-import { Debug } from 'astro/components';
+import { Debug } from "astro/components";
 import About from "../pages/about.astro";
 const { post } = Astro.props;
 const { title, category, tags, description } = post.data;
 ---
-<a href=`/epic/blog/${post.slug}` class="card">
-  <div class:list={['header', `${category}`]}>
+
+<div class="card">
+  <div class:list={["header", `${category}`]}>
     <div class="cat">
       {category}
     </div>
   </div>
   <div class="taglist">
     <ul class="tags">
-      { tags.map( (tag) => <li class="tag">{tag}</li>) }
+      {tags.map((tag) => <li class="tag">{tag}</li>)}
     </ul>
   </div>
-  <div class="title">{title}</div>
-  <div class="description">{description}</div>
-  <div class="more"><p>Read post --&gt;</p></div>
-</a>
-
+  <a href=`/epic/blog/${post.slug}` ">
+    <div class="title">{title}</div>
+    <div class="description">{description}</div>
+    <div class="more"><p>Read post --&gt;</p></div>
+  </a>
+</div>
 
 <style>
   .card {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-  	box-shadow: 2px 4px 12px var(--clr-black);
+    box-shadow: 2px 4px 12px var(--clr-black);
   }
-  
+
   .header {
     font-size: 1.2em;
     font-family: var(--ff-headings);
     font-weight: var(--fw-bold);
     color: var(--clr-primary-900);
-    padding-inline: .5em;
+    padding-inline: 0.5em;
     padding-bottom: 3em;
     border-radius: 10px 10px 0 0;
-    background-color: var(--clr-primary-500);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: soft-light;
   }
 
-  .Gear { background-image: url('../assets/gear.jpg'); }
+  .Gear {
+    background-image: url("../assets/gear.jpg");
+  }
 
-  .Crew { background-image: url('../assets/crew.jpg'); }
+  .Crew {
+    background-image: url("../assets/crew.jpg");
+  }
 
-  .Racing { background-image: url('../assets/racing.jpg'); }
+  .Racing {
+    background-image: url("../assets/racing.jpg");
+  }
 
-  .Training { background-image: url('../assets/training.jpg'); }
+  .Training {
+    background-image: url("../assets/training.jpg");
+  }
 
-  .Nutrition{ background-image: url('../assets/nutrition.jpg'); }
-  
-  .title, .description, .more {
-    padding: 0 .5rem;
+  .Nutrition {
+    background-image: url("../assets/nutrition.jpg");
+  }
+
+  .title,
+  .description,
+  .more {
+    padding: 0 0.5rem;
   }
 
   .description {
     line-height: 1.4em;
   }
-  
+
   .title {
     font-family: var(--ff-headings);
     font-size: 1.2em;
     color: var(--clr-primary-900);
     line-height: 1em;
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
 
   .taglist {
@@ -75,17 +86,17 @@ const { title, category, tags, description } = post.data;
     font-size: small;
     color: var(--clr-secondary-500);
     margin: 0;
-    margin-top: .2em;
+    margin-top: 0.2em;
   }
   .tags {
     display: flex;
     justify-content: flex-start;
-    gap: .5em;
+    gap: 0.5em;
   }
 
-ul {
-    margin: 0 .5em;
-    padding:0;
+  ul {
+    margin: 0 0.5em;
+    padding: 0;
   }
 
   .tags li {
@@ -100,5 +111,4 @@ ul {
     font-family: var(--ff-headings);
     align-self: center;
   }
-    
 </style>

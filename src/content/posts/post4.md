@@ -10,7 +10,7 @@ tags:
   - hydration
 draft: false
 ---
-![The Italian Alps](../assets/mountains-italy-alps-1280.jpg) running in Italy
+![The Italian Alps](../../assets/mountains-italy-alps-1280.jpg)
 ## Togetherness
 My wife is not an ultra-runner. She isn't a runner. She ***is***, however, **fantastic** crew! She knows just what I need before I get to the aid station and has it ready when I arrive.
 

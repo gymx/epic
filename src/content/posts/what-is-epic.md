@@ -2,17 +2,17 @@
 title: What is Epic?
 author: Jim
 pubDate: 2023-07-01
-category: Training
+category: Racing
 description: this is a short description of the post which can be used in the card.
 tags:
   - blog
 draft: false
 ---
-We use the word "**epic**" often. We use it to describe many things. I'm not sure we always use it correctly, even in the context of trail running or ultras.  
+We use the word "**epic**" often. We use it to describe many things. I'm not sure we always use it correctly, even in the context of trail running or ultras.
 
 The first results from Google when you search 'epic' are:
 
-EPIC 
+EPIC
 The Leading Digital Library for Kids
 and
 Epic Games
@@ -24,7 +24,7 @@ Let's check Merriam-Webster to see what they have to say.
 
 
 **epic** *(noun)*
-long narrative poem ...  
+long narrative poem ...
 a work of art ...
 
 
