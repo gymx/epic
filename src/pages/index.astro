@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 import welcome from "../assets/welcome.jpg";
 const title = "Home";
 ---
@@ -7,10 +8,11 @@ const title = "Home";
 <BaseLayout title={title}>
   <div class="home">
     <h1>Welcome</h1>
-    <img
+    <Image
       class="image"
       src={welcome}
       alt="desertscape with water in foreground"
+      width={welcome.width / 2}
     />
     <p>
       If you're new to trail running, or experienced but looking to take on a

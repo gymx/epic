@@ -2,23 +2,19 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import PostCard from "../components/PostCard.astro";
-const publishedPosts = await getCollection('posts', ({data})=>{
-	return data.draft !== true;
+const recentPosts = await getCollection("posts");
+const publishedPosts = await getCollection("posts", ({ data }) => {
+  return data.draft !== true;
 });
 
 const title = "Blog";
 ---
 
 <BaseLayout title={title}>
-	<h1>Latest Posts</h1>
-	<div class="blogCards">
-		{ publishedPosts.map( (post) => (
-				<PostCard post = {post} />
-				))
-			}
-	</div>
+  <h1>Latest Posts</h1>
+  <div class="blogCards">
+    {publishedPosts.map((post) => <PostCard post={post} />)}
+  </div>
 </BaseLayout>
 
-<style>
-
-</style>
+<style></style>

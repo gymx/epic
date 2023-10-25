@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "PermanentMarker";
+  font-weight: 400;
+  src: url("/epic/fonts/PermanentMarker-Regular.woff2") format("woff2"),
+    url("/epic/fonts/PermanentMarker-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("/epic/fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("/epic/fonts/opensans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  src: url("/epic/fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("/epic/fonts/opensans-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: url("/epic/fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("/epic/fonts/opensans-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/epic/fonts/OpenSans-MediumItalic.woff2"),
+    url("/epic/fonts/OpenSans-MediumItalic.woff");
+}
+
 :root {
   --clr-primary-500: hsl(23, 83%, 53%);
   --clr-primary-900: hsl(23, 83%, 23%);
@@ -82,41 +118,6 @@ h6 {
 #__next {
   isolation: isolate;
 }
-@font-face {
-  font-family: "PermanentMarker";
-  font-weight: 400;
-  src: url("/fonts/PermanentMarker-Regular.woff2") format("woff2"),
-    url("/fonts/PermanentMarker-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  src: url("/fonts/opensans-regular-webfont.woff2") format("woff2"),
-    url("/fonts/opensans-regular-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 700;
-  src: url("/fonts/opensans-bold-webfont.woff2") format("woff2"),
-    url("/fonts/opensans-bold-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 600;
-  src: url("/fonts/opensans-semibold-webfont.woff2") format("woff2"),
-    url("/fonts/opensans-semibold-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: italic;
-  src: url("/fonts/OpenSans-MediumItalic.woff2"),
-    url("/fonts/OpenSans-MediumItalic.woff");
-}
 
 html {
   color-scheme: dark, light;
@@ -141,21 +142,21 @@ h3 {
   font-family: var(--ff-headings);
   font-weight: 700;
 }
-  a {
-    text-decoration: none;
-    color: var(--clr-primary-500);
-  }
+a {
+  text-decoration: none;
+  color: var(--clr-primary-500);
+}
 
-  p + p {
-    margin-top: 0.7em;
-  }
+p + p {
+  margin-top: 0.7em;
+}
 
-  a:hover {
-    color: var(--clr-primary-900);
-  }
+a:hover {
+  color: var(--clr-primary-900);
+}
 
-.base-header{
-  margin: .5rem 0;
+.base-header {
+  margin: 0.5rem 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -171,7 +172,7 @@ h3 {
   color: var(--clr-white);
   font-weight: var(--fw-semibold);
   border-radius: 100px;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 1em auto;
   border: none;
   cursor: pointer;
@@ -183,8 +184,7 @@ h3 {
 }
 
 .blogCards {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	gap: 1em 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1em 1em;
 }
-
