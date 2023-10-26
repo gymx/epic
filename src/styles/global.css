@@ -35,14 +35,6 @@
 }
 
 :root {
-  --clr-primary-500: hsl(23, 83%, 53%);
-  --clr-primary-900: hsl(23, 83%, 23%);
-  --clr-primary-300: hsl(23, 83%, 70%);
-  --clr-secondary-500: hsl(147, 60%, 39%);
-
-  --clr-black: #121212;
-  --clr-white: #efefef;
-
   --ff-base: "Open Sans", sans-serif;
   --ff-headings: "PermanentMarker", serif;
 
@@ -50,6 +42,14 @@
   --fw-semibold: 600;
   --fw-bold: 700;
   --fw-black: 900;
+
+  --clr-primary-500: hsl(23, 83%, 53%);
+  --clr-primary-900: hsl(23, 83%, 23%);
+  --clr-primary-300: hsl(23, 83%, 70%);
+  --clr-secondary-500: hsl(147, 60%, 39%);
+
+  --clr-black: #121212;
+  --clr-white: #efefef;
 }
 
 /*

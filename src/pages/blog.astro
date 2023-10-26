@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import PostCard from "../components/PostCard.astro";
-const recentPosts = await getCollection("posts");
 const publishedPosts = await getCollection("posts", ({ data }) => {
   return data.draft !== true;
 });
